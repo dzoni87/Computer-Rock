@@ -1,0 +1,75 @@
+//---------- settings
+//------------------------------------------------------------------------------
+
+.settings__card {
+	background-color: $grey;
+}
+.settings__card-top {
+	padding: 22px 24px;
+}
+.settings__card-options {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+}
+.settings__card-box {
+	width: 100%;
+	@include media-breakpoint-up(md) {
+		max-width: 221px;
+	}
+}
+.settings__card-value {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.settings__card-bottom {
+	padding: 33px 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 19px;
+	margin-left: auto;
+	input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1b2023;
+	@include animation {
+		transition: 0.4s;
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		height: 15px;
+		width: 17px;
+		left: 2px;
+		bottom: 1.5px;
+		background-color: $blue;
+		@include animation {
+			transition: 0.4s;
+		}
+	}
+}
+
+input:checked + .slider:before {
+	background-color: #55626c;
+	transform: translateX(17px);
+}

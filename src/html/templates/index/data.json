@@ -1,0 +1,20 @@
+{
+	"template": "index",
+	"data": {
+		"profile": {
+			">>": "modules/profile/data.json"
+		},
+		"weather": {
+			">>": "modules/weather/data.json"
+		},
+		"publish-photos": {
+			">>": "modules/publish-photos/data.json"
+		},
+		"account": {
+			">>": "modules/account/data.json"
+		},
+		"settings": {
+			">>": "modules/settings/data.json"
+		}
+	}
+}

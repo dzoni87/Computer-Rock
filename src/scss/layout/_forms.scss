@@ -1,0 +1,25 @@
+//----------  forms
+//------------------------------------------------------------------------------
+input,
+textarea {
+	display: block;
+	height: 35px;
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	background: $white;
+	border-radius: 0;
+	box-shadow: none;
+	color: $blue-dark;
+	padding: 0 10px;
+	@include animation {
+		transition: 0.3s ease-out;
+	}
+	&::placeholder {
+		color: $blue-dark;
+		font-size: 14px;
+	}
+	&:focus {
+		border-radius: 5px;
+	}
+}

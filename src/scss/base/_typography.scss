@@ -1,0 +1,40 @@
+//----------  typography
+//------------------------------------------------------------------------------
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-default;
+	font-weight: 300;
+	line-height: 1.35em;
+	color: $white;
+}
+
+.h1 {
+	font-size: 48px;
+}
+
+.h2 {
+	font-size: 36px;
+}
+
+.h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 14px;
+	color: rgba($white, 0.6);
+	line-height: 1.6;
+}
+img {
+	max-width: 100%;
+}
+a {
+	font-size: 12px;
+	font-weight: 300;
+	color: rgba($white, 0.6);
+	text-decoration: underline;
+	@include hover {
+		color: $white;
+		text-decoration: none;
+	}
+}

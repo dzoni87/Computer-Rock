@@ -1,0 +1,22 @@
+{{#> master data }}
+{{#*inline "template-content"}}
+
+<main class="main">
+	<div class="container">
+		<div class="content-wrap">
+			<div class="content-row small">
+				{{> profile profile}}
+				{{> account account}}
+			</div>
+			<div class="content-row">
+				{{> weather weather}}
+				{{> settings settings}}
+			</div>
+			<div class="content-row small">
+				{{> publish-photos publish-photos}}
+			</div>
+		</div>
+	</div>
+</main>
+{{/inline}}
+{{/master}}

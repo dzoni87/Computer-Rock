@@ -1,0 +1,21 @@
+//---------- account
+//------------------------------------------------------------------------------
+
+.account__card {
+	background-color: $orange;
+}
+.account__card-top {
+	padding: 24px;
+}
+.account-input {
+	&:not(:last-of-type) {
+		margin-bottom: 18px;
+	}
+}
+.account__card-bottom {
+	background-color: rgba($black, 0.12);
+	padding: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

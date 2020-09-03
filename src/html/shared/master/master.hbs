@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+
+	<!-- main css file -->
+	<link rel="stylesheet" href="{{getPath}}css/style.min.css{{{getVersion}}}">
+
+	<!-- global js file -->
+	<script defer type="text/javascript" src="{{getPath}}js/global.js{{{getVersion}}}"></script>
+
+	<title>{{pageTitle}}{{#if title}} - {{title}}{{/if}}</title>
+	<link href="favicon.ico" rel="icon" />
+</head>
+
+<body class="{{#if (isMultilanguage)}}lang-{{language}} {{/if}}{{getBodyClass}}">
+
+	{{#> template-content}}
+	{{/template-content}}
+</body>
+
+</html>

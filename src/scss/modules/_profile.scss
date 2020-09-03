@@ -1,0 +1,58 @@
+//---------- profile
+//------------------------------------------------------------------------------
+
+.profile {
+	width: 100%;
+}
+.profile-card {
+	background-color: $purple;
+}
+.profile-card__top {
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 62px;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(0deg, rgba(104,52,186,1) 0%, rgba(255,255,255,0) 88%);
+	}
+}
+.profile-card__img {
+	width: 100%;
+	height: auto;
+}
+.profile-card__description {
+	padding: 23px;
+}
+.profile-card__paragraph {
+	font-size: 12px;
+}
+
+.profile-card__stats {
+	padding: 24px 35px;
+	display: flex;
+	justify-content: center;
+}
+.profile-card__stat {
+	text-align: center;
+	&:not(:last-of-type) {
+		margin-right: 40px;
+	}
+}
+.profile-card__number {
+	font-size: 12px;
+	font-weight: 400;
+	color: $white;
+	display: block;
+}
+.profile-card__value {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1.8;
+	color: rgba($white, 0.5);
+	display: block;
+}
+

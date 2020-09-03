@@ -1,0 +1,21 @@
+//---------- publish-photos
+//------------------------------------------------------------------------------
+
+.publish-photos__card {
+	background-color: $green;
+}
+.publish-photos__card-top {
+	padding: 67px 27px 24px;
+}
+.publish-photos__img {
+	max-width: 112px;
+	width: 100%;
+	margin: 0 auto 68px;
+	display: block;
+}
+
+.publish-photos__card-bottom {
+	padding: 24px;
+	display: flex;
+	justify-content: space-between;
+}

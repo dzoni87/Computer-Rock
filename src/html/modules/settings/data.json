@@ -1,0 +1,26 @@
+{
+	"title": "Settings",
+	"options-left": [
+		{
+			"option":"Email Notifications"
+		},
+		{
+			"option":"Show Full Names"
+		},
+		{
+			"option":"Sharing Features"
+		}
+	],
+
+	"options-right": [
+		{
+			"option":"Automatically Logout"
+		},
+		{
+			"option":"Show Ads"
+		},
+		{
+			"option":"Allow Multiple Uploads"
+		}
+	]
+}

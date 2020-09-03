@@ -1,0 +1,23 @@
+<div class="profile card">
+	<div class="profile-card">
+		<div class="profile-card__top">
+			<img src="assets/images/profile.png" alt="" class="profile-card__img">
+		</div>
+		<div class="profile-card__bottom">
+			<div class="profile-card__description">
+				<h3 class="profile-card__title h3">{{title}}</h3>
+				<p class="profile-card__paragraph text">{{descript}}</p>
+			</div>
+			<div class="profile-card__stats bg-ovarlay">
+				{{#if stat}}
+					{{#each stat}}
+					<div class="profile-card__stat">
+						<span class="profile-card__number">{{number}}</span>
+						<span class="profile-card__value">{{value}}</span>
+					</div>
+					{{/each}}
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>

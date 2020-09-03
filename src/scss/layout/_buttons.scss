@@ -1,0 +1,63 @@
+//----------  button
+//------------------------------------------------------------------------------
+a,
+button {
+	appearance: none;
+	outline: none;
+	@include media-breakpoint-up(lg) {
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+button,
+input,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	font-family: $font-default;
+}
+
+.btn {
+	background-color: rgba($black, 0.3);
+	color: $white;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	height: 35px;
+	padding: 0 20px;
+	@include animation {
+		transition: 0.4s ease-out;
+	}
+	@include hover {
+		background-color: $black;
+		border-radius: 20px;
+	}
+}
+.btn--yellow {
+	font-weight: 500;
+	color: #594403;
+	background-color: $yellow;
+	@include hover {
+		background-color: rgba($yellow, 0.8);
+	}
+}
+.btn--purple {
+	background-color: $purple;
+	font-weight: 500;
+	@include hover {
+		background-color: rgba( $purple, 0.8);
+	}
+}
+.btn--green {
+	background-color: $green;
+	font-weight: 500;
+	@include hover {
+		background-color: rgba( $green, 0.8);
+	}
+}

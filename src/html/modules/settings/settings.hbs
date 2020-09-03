@@ -1,0 +1,33 @@
+<div class="settings card">
+	<div class="settings__card">
+		<div class="settings__card-top">
+			<h3 class="h3 settings__card-title">{{title}}</h3>
+			<div class="settings__card-options">
+				<div class="settings__card-box">
+					{{#if options-left}}
+					{{#each options-left}}
+					<div class="settings__card-value">
+						<span class="settings__card-option text">{{option}}</span>
+						<label class="switch"> <input type="checkbox"><span class="slider"></span></label>
+					</div>
+					{{/each}}
+					{{/if}}
+				</div>
+				<div class="settings__card-box">
+					{{#if options-right}}
+					{{#each options-right}}
+					<div class="settings__card-value">
+						<span class="settings__card-option text">{{option}}</span>
+						<label class="switch"> <input type="checkbox"><span class="slider"></span></label>
+					</div>
+					{{/each}}
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="settings__card-bottom bg-ovarlay">
+			<a href="javascript:;">Reset to Default</a>
+			<button type="button" class="btn btn--green">Save</button>
+		</div>
+	</div>
+</div>
