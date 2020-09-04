@@ -15,6 +15,9 @@
 		},
 		"settings": {
 			">>": "modules/settings/data.json"
+		},
+		"calendar": {
+			">>": "modules/calendar/data.json"
 		}
 	}
 }

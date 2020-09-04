@@ -1,0 +1,144 @@
+//---------- calendar
+//------------------------------------------------------------------------------
+
+.calendar {
+	width: 100%;
+}
+.calendar__main {
+	width: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	flex-direction: column;
+}
+.calendar__sideb,
+.calendar__right-wrapper {
+	background-color: $yellow;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+}
+.calendar__right-arrow,
+.calendar__left-arrow {
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	&::before {
+		@include font-styles;
+		font-size: 25px;
+		opacity: 0.5;
+	}
+}
+.calendar__left-arrow {
+	left: 50px;
+	&::before {
+		content: font-char(ico-left-arrow);
+	}
+}
+.calendar__right-arrow {
+	right: 50px;
+	&::before {
+		content: font-char(ico-right-arrow);
+	}
+}
+.calendar__right-wrapper {
+	background-color: #f05855;
+	color: $white;
+	transition: 0.5s;
+	height: 190px;
+}
+.calendar__right-wrapper.is-active {
+	transform: rotateY(0deg);
+}
+.calendar__right-wrapper .header {
+	text-align: left;
+	justify-content: center;
+}
+.calendar__right-wrapper .day {
+	font-size: 60px;
+	text-indent: -12px;
+	display: block;
+}
+.calendar__right-wrapper .month {
+	font-size: 14px;
+	font-weight: 400;
+}
+.calendar__right-wrapper .year {
+	font-size: 14px;
+}
+.calendar__sideb .showDate {
+	color: $white;
+	text-align: right;
+	width: 100%;
+}
+.calendar__sideb  .showDate i {
+	cursor: pointer;
+	background: #f05855;
+	border-radius: 4px;
+	padding: 8px 12px;
+	transform: scale(1);
+	transition: 0.3s;
+}
+.calendar__sideb .showDate i.is-active {
+	transform: scale(-1);
+}
+.calendar__table {
+	text-align: center;
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	tbody {
+		&::before {
+			content: '-';
+			display: block;
+			line-height: 0.75em;
+			color: transparent;
+		}
+	}
+	th {
+		display: none;
+	}
+	td {
+		padding: 11px 5px;
+		color: $grey;
+		font-size: 12px;
+		font-weight: 400;
+		transition: 0.3s;
+		position: relative;
+	}
+	.selectable {
+		color: $grey;
+		cursor: pointer;
+		&:hover {
+			background: $orange;
+			color: $white;
+			border-radius: 5px;
+		}
+	}
+	.currentDay {
+		color: $orange;
+		background-color: $white;
+		border-radius: 5px;
+		width: 28px;
+		height: 28px;
+		font-weight: 700;
+		&::before {
+			display: block;
+		}
+	}
+	.between {
+		background-color: $grey;
+		color: $white;
+		border-radius: 5px;
+	}
+	.active, .calendar__sideb table td.hover {
+		background: #f05855;
+		color: $white;
+		border-radius: 5px;
+	}
+}
