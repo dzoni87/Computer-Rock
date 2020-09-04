@@ -13,7 +13,7 @@ module.exports = {
 	languages: ['en'],
 	// add page titles for different languages
 	pageTitle: {
-		en: 'Front-end HBS Starter',
+		en: 'Nikola-test',
 	},
 	path: '/',
 	webFolder: null,
