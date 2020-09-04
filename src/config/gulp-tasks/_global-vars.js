@@ -12,7 +12,7 @@ module.exports = {
 	languages: ['en'],
 	// add page titles for different languages
 	pageTitle: {
-		en: 'Nikola-test,
+		en: 'Nikola-test',
 	},
 	path: '/',
 

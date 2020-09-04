@@ -284,7 +284,7 @@ td {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'svgicons';
-  src: url("../assets/fonts/svgicons.woff2?t=1599181254239") format("woff2"), url("../assets/fonts/svgicons.woff?t=1599181254239") format("woff"), url("../assets/fonts/svgicons.ttf?t=1599181254239") format("truetype");
+  src: url("../assets/fonts/svgicons.woff2?t=1599204095589") format("woff2"), url("../assets/fonts/svgicons.woff?t=1599204095589") format("woff"), url("../assets/fonts/svgicons.ttf?t=1599204095589") format("truetype");
 }
 
 .font-ico-back:before, .font-ico-chevron-down:before, .font-ico-dog:before, .font-ico-download:before, .font-ico-left-arrow:before, .font-ico-location-icon:before, .font-ico-next:before, .font-ico-pause:before, .font-ico-play-button:before, .font-ico-right-arrow:before, .font-ico-share:before {
