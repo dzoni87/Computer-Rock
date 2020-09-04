@@ -1,0 +1,28 @@
+{
+	"title": "Latest Photos",
+	"galery-box": [
+		 {
+			"gallery-img": [
+				{
+					"src": "assets/images/Photo1.png"
+				},
+				{
+					"src": "assets/images/Photo2.png"
+				}
+			]
+		 },
+		 {
+			"gallery-img": [
+				{
+					"src": "assets/images/Photo3.png"
+				},
+				{
+					"src": "assets/images/Photo4.png"
+				},
+				{
+					"src": "assets/images/Photo5.png"
+				}
+			]
+		 }
+	]
+}

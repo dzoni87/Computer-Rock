@@ -18,6 +18,9 @@
 		},
 		"calendar": {
 			">>": "modules/calendar/data.json"
+		},
+		"gallery": {
+			">>": "modules/gallery/data.json"
 		}
 	}
 }

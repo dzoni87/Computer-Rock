@@ -1,0 +1,36 @@
+<div class="gallery card">
+		<div class="gallery__card" style="background-image: url('assets/images/bg.png');">
+		<div class="gallery__card-top">
+			<h3 class="h3 gallery___card-title">{{title}}</h3>
+			<a href="javascript:;" class="gallery__card-link">See All</a>
+		</div>
+		<div class="gallery__card-bottom">
+			<div class="gallery__card-container">
+				{{#each galery-box}}
+					<div class="gallery__card-box">
+					{{#if gallery-img}}
+					{{#each gallery-img}}
+					<div href="/" class="gallery__card-img">
+						<img src="{{src}}" alt="Gallery image">
+					</div>
+					{{/each}}
+					{{/if}}
+				</div>
+				{{/each}}
+				<div class="gallery__card-box gallery__card-box--big">
+					<div class="gallery__card-box-top">
+						<div class="gallery__card-img">
+							<img src="assets/images/Photo6.png" alt="Gallery image">
+						</div>
+						<div class="gallery__card-img">
+							<img src="assets/images/Photo7.png" alt="Gallery image">
+						</div>
+					</div>
+					<div class="gallery__card-img">
+							<img src="assets/images/Photo8.png" alt="Gallery image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
