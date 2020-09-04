@@ -31,33 +31,56 @@ input[type='submit'] {
 	font-weight: 300;
 	height: 35px;
 	padding: 0 20px;
-	@include animation {
-		transition: 0.4s ease-out;
+	z-index: 1;
+	position: relative;
+	&::before {
+		background-color: rgba($black, 0.8);
+		content: '';
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 0;
+		z-index: 0;
+		@include animation {
+			transition: 0.4s ease-out;
+		}
+	}
+	.btn-text {
+		z-index: 20;
+		position: relative;
+		transition: 0.4s ease-in;
 	}
 	@include hover {
-		background-color: $black;
-		border-radius: 20px;
+		&::before {
+			width: 100%;
+		}
 	}
 }
 .btn--yellow {
 	font-weight: 500;
 	color: #594403;
 	background-color: $yellow;
+	&::before {
+		background-color: rgba($black, 0.3);
+	}
 	@include hover {
-		background-color: rgba($yellow, 0.8);
+		.btn-text {
+			color: $black;
+		}
 	}
 }
 .btn--purple {
 	background-color: $purple;
 	font-weight: 500;
-	@include hover {
-		background-color: rgba( $purple, 0.8);
+	&::before {
+		background-color: rgba($white, 0.2);
 	}
 }
 .btn--green {
 	background-color: $green;
 	font-weight: 500;
-	@include hover {
-		background-color: rgba( $green, 0.8);
+	&::before {
+		background-color: rgba($white, 0.2);
 	}
 }
