@@ -23,6 +23,10 @@ body {
 	flex-direction: column;
 	@include media-breakpoint-up(md) {
 		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@include media-breakpoint-up(xl) {
+		flex-wrap: unset;
 	}
 }
 .content-row {
@@ -30,11 +34,28 @@ body {
 	max-width: 100%;
 	@include media-breakpoint-up(md) {
 		&:not(:last-of-type) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+		&.small {
+			flex: 1 1 300px;
+			max-width: 300px;
+			margin-right: 20px;
+			order: 1;
+		}
+	}
+	@include media-breakpoint-up(lg) {
+		&:not(:last-of-type) {
 			margin-right: 48px;
 		}
 		&.small {
 			flex: 1 1 300px;
 			max-width: 300px;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+		&.small {
+			order: unset;
 		}
 	}
 	.card {
@@ -53,6 +74,9 @@ body {
 		transition: 0.3s ease;
 	}
 	@include media-breakpoint-up(md) {
+		margin-bottom: 20px;
+	}
+	@include media-breakpoint-up(xl) {
 		margin-bottom: 48px;
 	}
 	@include hover {
